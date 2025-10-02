@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árboles Fractales con p5.js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls">
+        <div class="slider-container">
+            <label for="branchLengthSlider">Longitud de rama:</label>
+            <input type="range" id="branchLengthSlider" min="50" max="200" value="120">
+            <span id="branchLengthValue">120</span>
+        </div>
+        <div class="slider-container">
+            <label for="angleSlider">Ángulo:</label>
+            <input type="range" id="angleSlider" min="10" max="45" value="25">
+            <span id="angleValue">25</span>
+        </div>
+        <div class="slider-container">
+            <label for="reductionSlider">Reducción:</label>
+            <input type="range" id="reductionSlider" min="50" max="80" value="70">
+            <span id="reductionValue">0.7</span>
+        </div>
+        <div class="slider-container">
+            <label for="depthSlider">Profundidad:</label>
+            <input type="range" id="depthSlider" min="5" max="12" value="8">
+            <span id="depthValue">8</span>
+        </div>
+        <div class="slider-container">
+            <label for="colorSelector">Color:</label>
+            <select id="colorSelector">
+                <option value="natural">Natural</option>
+                <option value="rainbow">Arcoíris</option>
+                <option value="autumn">Otoño</option>
+                <option value="winter">Invierno</option>
+            </select>
+        </div>
+        <div class="slider-container">
+            <label for="birdsCheckbox">Pájaros:</label>
+            <input type="checkbox" id="birdsCheckbox" checked>
+        </div>
+        <div class="slider-container">
+            <label for="birdDensitySlider">Densidad de pájaros:</label>
+            <input type="range" id="birdDensitySlider" min="10" max="50" value="30">
+            <span id="birdDensityValue">0.3</span>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
