@@ -103,7 +103,7 @@ class Bird {
 }
 
 function setup() {
-  createCanvas(800, 600);
+  createCanvas(windowWidth, windowHeight);
   
   // Configurar los controles de la interfaz
   document.getElementById('branchLengthSlider').addEventListener('input', function() {
@@ -386,6 +386,7 @@ function resetBirds() {
 // Función para reiniciar el dibujo cuando se cambia la ventana
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  resetBirds();
   redraw();
 }
 
